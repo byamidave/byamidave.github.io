@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A quiet visual journal by Ami Dave.">
+  <title>By Ami Dave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="By Ami Dave home">AD</a>
+    <nav aria-label="Primary navigation">
+      <a href="#journal">Journal</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="images/hero.svg" alt="Featured photograph">
+      <div class="hero-copy">
+        <p class="eyebrow">A visual journal</p>
+        <h1>Places are remembered by how they felt.</h1>
+      </div>
+    </section>
+
+    <section id="journal" class="intro">
+      <p>
+        Photographs of passing light, quiet corners and people inhabiting places.
+        Made mostly on an iPhone.
+      </p>
+    </section>
+
+    <section id="collections" class="gallery" aria-label="Selected photographs">
+      <figure class="wide">
+        <img src="images/photo-1.svg" alt="Selected photograph 1">
+        <figcaption>Passing Through</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo-2.svg" alt="Selected photograph 2">
+        <figcaption>Morning Light</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo-3.svg" alt="Selected photograph 3">
+        <figcaption>Quiet Corners</figcaption>
+      </figure>
+      <figure class="tall">
+        <img src="images/photo-4.svg" alt="Selected photograph 4">
+        <figcaption>Windows</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo-5.svg" alt="Selected photograph 5">
+        <figcaption>Stillness</figcaption>
+      </figure>
+      <figure>
+        <img src="images/photo-6.svg" alt="Selected photograph 6">
+        <figcaption>Found Symmetry</figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="about">
+      <p class="eyebrow">About</p>
+      <h2>Not chasing perfect photographs.</h2>
+      <p>
+        I am interested in how places feel. Photography is an excuse to slow down
+        and notice moments that are easy to miss.
+      </p>
+      <a href="https://unsplash.com/@amidave" target="_blank" rel="noreferrer">View more on Unsplash ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Ami Dave</span>
+    <span>Made with curiosity.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
