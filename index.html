@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A quiet visual journal by Ami Dave.">
-  <title>By Ami Dave</title>
+  <meta name="description" content="A visual journal by Ami Dave — photographs of places, light, and the moments most people walk past.">
+  <title>AD — A Visual Journal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a class="skip-link" href="#journal">Skip to journal</a>
+
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="By Ami Dave home">AD</a>
+    <a class="brand" href="#top" aria-label="AD — home">AD</a>
     <nav aria-label="Primary navigation">
       <a href="#journal">Journal</a>
       <a href="#collections">Collections</a>
@@ -21,82 +23,130 @@
   </header>
 
   <main id="top">
-    <section class="hero">
-      <img src="images/Hero.jpg" alt="Featured photograph">
+    <section class="hero" aria-label="Featured photograph">
+      <div class="hero-frame">
+        <img
+          src="images/Hero.jpg"
+          width="3456" height="2592"
+          alt="Snow-capped Alpine peaks and a forested valley, seen through the window of a moving car."
+          fetchpriority="high"
+        >
+      </div>
       <div class="hero-copy">
         <p class="eyebrow">A visual journal</p>
-        <h1>Places are remembered by how they felt.</h1>
+        <h1>Places are remembered<br>by how they felt.</h1>
       </div>
     </section>
 
     <section id="journal" class="intro">
       <p>
-        Photographs of passing light, quiet corners and people inhabiting places.
-        Made mostly on an iPhone.
+        A study of passing light, quiet corners, and the moments most
+        people walk past — made mostly on an iPhone, one slow look at a time.
       </p>
     </section>
 
-    <section id="collections" class="gallery" aria-label="Selected photographs">
-      <figure class="wide">
-        <img src="images/photo-01.jpg" alt="Selected photograph 1">
+    <section class="gallery" aria-label="Selected photographs">
+
+      <figure class="frame frame-solo align-end">
+        <img src="images/photo-01.jpg" width="2874" height="3833" loading="lazy" decoding="async"
+          alt="A city skyline at dusk seen through a hotel window, curtains framing the light.">
         <figcaption>Borrowed View</figcaption>
       </figure>
-      <figure>
-        <img src="images/photo-02.jpg" alt="Selected photograph 2">
-        <figcaption>Between Places</figcaption>
-      </figure>
-      <figure>
-        <img src="images/photo-03.jpg" alt="Selected photograph 3">
-        <figcaption>Quiet Geometry</figcaption>
-      </figure>
-      <figure class="tall">
-        <img src="images/photo-04.jpg" alt="Selected photograph 4">
+
+      <div class="pair">
+        <figure class="frame">
+          <img src="images/photo-02.jpg" width="4283" height="5711" loading="lazy" decoding="async"
+            alt="A cup of coffee on a small table by an open window, overlooking a wrought-iron Parisian balcony.">
+          <figcaption>Between Places</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="images/photo-03.jpg" width="4114" height="5487" loading="lazy" decoding="async"
+            alt="A grand stone archway with vaulted, ornamented ceilings, figures walking through in the distance.">
+          <figcaption>Quiet Geometry</figcaption>
+        </figure>
+      </div>
+
+      <figure class="frame frame-solo align-start">
+        <img src="images/photo-04.jpg" width="2238" height="2984" loading="lazy" decoding="async"
+          alt="An open blue doorway leading to a narrow alley on Jew Town Road, sunlight at the far end.">
         <figcaption>Windows</figcaption>
       </figure>
-      <figure>
-        <img src="images/photo-05.jpg" alt="Selected photograph 5">
+
+      <figure class="frame frame-small">
+        <img src="images/photo-05.jpg" width="2739" height="3652" loading="lazy" decoding="async"
+          alt="View through a car windscreen of a mountain highway leading toward a tunnel.">
         <figcaption>Stillness</figcaption>
       </figure>
-      <figure>
-        <img src="images/photo-06.jpg" alt="Selected photograph 6">
+
+      <figure class="frame frame-wide">
+        <img src="images/photo-06.jpg" width="3474" height="2605" loading="lazy" decoding="async"
+          alt="Rain streaked across a car windscreen, wipers mid-motion, blurred tail lights ahead.">
         <figcaption>Found Symmetry</figcaption>
       </figure>
-      <figure>
-        <img src="images/photo-07.jpg" alt="Selected photograph 7">
-        <figcaption>Depatures</figcaption>
-      </figure>
-      <figure>
-        <img src="images/photo-08.jpg" alt="Selected photograph 8">
-        <figcaption>After Midnight</figcaption>
-      </figure>
-      <figure>
-        <img src="images/photo-09.jpg" alt="Selected photograph 9"> 
+
+      <div class="pair">
+        <figure class="frame">
+          <img src="images/photo-07.jpg" width="2648" height="3532" loading="lazy" decoding="async"
+            alt="Raindrops covering an airplane window, the wing and a rain-soaked tarmac beyond.">
+          <figcaption>Departures</figcaption>
+        </figure>
+        <figure class="frame">
+          <img src="images/photo-08.jpg" width="2719" height="3626" loading="lazy" decoding="async"
+            alt="A glowing street lamp lighting falling rain against a dark night sky, in black and white.">
+          <figcaption>After Midnight</figcaption>
+        </figure>
+      </div>
+
+      <figure class="frame frame-wide">
+        <img src="images/photo-09.jpg" width="3801" height="2851" loading="lazy" decoding="async"
+          alt="A glass of chai resting on a table's edge, a blurred green landscape behind it.">
         <figcaption>The Hour Before</figcaption>
       </figure>
-      <figure>
-        <img src="images/photo-10.jpg" alt="Selected photograph 10">
+
+      <figure class="frame frame-solo align-center">
+        <img src="images/photo-10.jpg" width="4283" height="5711" loading="lazy" decoding="async"
+          alt="Wet sand reflecting an orange sunset sky, waves breaking along the shoreline.">
         <figcaption>First Light</figcaption>
       </figure>
-      <figure>
-        <img src="images/photo-11.jpeg" alt="Selected photograph 11"> 
+
+      <figure class="frame frame-wide">
+        <img src="images/photo-11.jpeg" width="4032" height="3024" loading="lazy" decoding="async"
+          alt="A star-filled night sky over dark mountains and lit alpine chalets.">
         <figcaption>The Last Light</figcaption>
       </figure>
+
+    </section>
+
+    <section id="collections" class="collections">
+      <p class="eyebrow">Collections</p>
+      <h2>Organised by feeling, not geography.</h2>
+      <ul class="collection-list">
+        <li>Windows</li>
+        <li>Stillness</li>
+        <li>Blue Hour</li>
+        <li>On the Road</li>
+        <li>Quiet Corners</li>
+        <li>After Rain</li>
+      </ul>
+      <p class="collections-note">An index that will grow slowly, by feeling rather than by map.</p>
     </section>
 
     <section id="about" class="about">
       <p class="eyebrow">About</p>
       <h2>Not chasing perfect photographs.</h2>
       <p>
-        I am interested in how places feel. Photography is an excuse to slow down
-        and notice moments that are easy to miss.
+        I'm interested in the feeling a place leaves behind. Most of these images were
+        made on an iPhone — walking home, waiting for a train, or stopping the car a
+        little longer than everyone else wanted, because the light had changed.
+        Photography has become my excuse to slow down. This isn't a collection of
+        destinations. It's a collection of moments that almost went unnoticed.
       </p>
-      <a href="https://unsplash.com/@amidave" target="_blank" rel="noreferrer">View more on Unsplash ↗</a>
     </section>
   </main>
 
   <footer>
     <span>© <span id="year"></span> Ami Dave</span>
-    <span>Made with curiosity.</span>
+    <a href="https://unsplash.com/@amidave" target="_blank" rel="noreferrer">More on Unsplash ↗</a>
   </footer>
 
   <script src="script.js"></script>
