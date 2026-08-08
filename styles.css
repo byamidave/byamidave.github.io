@@ -113,7 +113,7 @@ nav a:focus-visible {
 .hero {
   display: flex;
   height: calc(100vh - 59px);
-  padding: 0.8vw 1.6vw 1vw;
+  padding: 4px 0 6px;
   background: var(--dark);
   color: var(--dark-ink);
 }
@@ -138,7 +138,7 @@ nav a:focus-visible {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 7%;
+  bottom: 10.8%;
   max-width: 760px;
   margin: 0 auto;
   padding: 0 24px;
