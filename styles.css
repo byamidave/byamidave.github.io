@@ -13,7 +13,7 @@
   --dark-muted: rgba(255, 255, 255, 0.6);
   --dark-line: rgba(255, 255, 255, 0.12);
 
-  --serif: "Newsreader", Georgia, serif;
+  --serif: "Source Serif 4", Georgia, serif;
   --sans: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -163,7 +163,7 @@ h1, h2 {
 }
 
 h1 {
-  font-size: clamp(1.5rem, 3vw, 2.15rem);
+  font-size: clamp(1.35rem, 2.7vw, 1.94rem);
 }
 
 /* ---------- Intro ---------- */
@@ -246,6 +246,37 @@ figcaption {
   text-transform: uppercase;
 }
 
+/* ---------- Journal fragments (marginal notes, not captions) ---------- */
+
+.fragment {
+  align-self: flex-start;
+  margin: 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.55;
+  text-align: left;
+}
+
+.fragment-a {
+  max-width: 300px;
+  margin: 8px 0 8px 6%;
+  font-size: clamp(0.92rem, 1.3vw, 1.02rem);
+}
+
+.fragment-b {
+  max-width: 340px;
+  margin: 18px 0 18px 16%;
+  font-size: clamp(0.95rem, 1.35vw, 1.08rem);
+}
+
+.fragment-c {
+  max-width: 270px;
+  margin: 10px 0 10px 9%;
+  font-size: clamp(0.9rem, 1.25vw, 1rem);
+}
+
 /* Scroll reveal (progressive enhancement — visible by default without JS) */
 
 .frame.pre-reveal,
@@ -273,7 +304,7 @@ figcaption {
 .collections h2 {
   max-width: 640px;
   margin: 20px auto 0;
-  font-size: clamp(1.6rem, 3.6vw, 2.6rem);
+  font-size: clamp(1.44rem, 3.24vw, 2.34rem);
 }
 
 .collection-list {
@@ -314,7 +345,7 @@ figcaption {
 .about h2 {
   max-width: 620px;
   margin: 20px auto 0;
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-size: clamp(1.62rem, 3.6vw, 2.7rem);
 }
 
 .about p:not(.eyebrow) {
@@ -384,7 +415,7 @@ footer a {
   }
 
   .hero-copy h1 {
-    font-size: 4vw;
+    font-size: 3.6vw;
     line-height: 1.15;
   }
 
