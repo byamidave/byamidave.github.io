@@ -134,15 +134,22 @@ nav a:focus-visible {
   object-fit: contain;
 }
 
+.hero-photo-bounds {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 4 / 3;
+}
+
 .hero-copy {
   position: absolute;
   left: 0;
-  right: 0;
   bottom: 10.8%;
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 24px;
-  text-align: center;
+  max-width: 58%;
+  padding: 0 0 0 5%;
+  text-align: left;
 }
 
 .eyebrow {
@@ -210,6 +217,14 @@ h1 {
   background: rgba(0, 0, 0, 0.04);
 }
 
+.frame-solo,
+.frame-small {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 32px;
+}
+
 .frame-solo img {
   max-width: min(100%, 1080px);
 }
@@ -218,9 +233,16 @@ h1 {
   max-width: min(100%, 680px);
 }
 
+.frame-solo figcaption,
+.frame-small figcaption {
+  flex: 0 0 200px;
+  max-width: 200px;
+  padding-top: 0;
+}
+
 .align-start,
 .align-end {
-  align-items: center;
+  justify-content: center;
 }
 
 .pair {
@@ -228,6 +250,14 @@ h1 {
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   align-items: start;
+}
+
+.pair .frame {
+  align-items: flex-start;
+}
+
+.frame-wide figcaption {
+  align-self: flex-start;
 }
 
 .pair .frame img {
@@ -244,6 +274,16 @@ figcaption {
   font-weight: 300;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: left;
+}
+
+figcaption::after {
+  content: "";
+  display: block;
+  width: 20px;
+  margin-top: 10px;
+  border-bottom: 1px solid currentColor;
+  opacity: 0.45;
 }
 
 /* Scroll reveal (progressive enhancement — visible by default without JS) */
@@ -308,21 +348,70 @@ figcaption {
   color: var(--dark-ink);
   border-top: 1px solid var(--dark-line);
   padding: 10vw 4vw 12vw;
-  text-align: center;
 }
 
-.about h2 {
-  max-width: 620px;
-  margin: 20px auto 0;
+.about-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 72px;
+  max-width: 1160px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-photos {
+  position: relative;
+  flex: 0 0 340px;
+  width: 340px;
+}
+
+.about-photo-primary {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+
+.about-photo-secondary {
+  position: absolute;
+  right: -48px;
+  bottom: -40px;
+  width: 42%;
+  aspect-ratio: 3 / 4;
+}
+
+.about-photo-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+}
+
+.about-photo-placeholder span {
+  font-family: var(--sans);
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--dark-muted);
+}
+
+.about-copy {
+  flex: 1;
+  max-width: 420px;
+  padding-top: 8px;
+}
+
+.about-copy h2 {
+  margin: 16px 0 0;
   font-size: clamp(1.8rem, 4vw, 3rem);
 }
 
-.about p:not(.eyebrow) {
-  max-width: 620px;
-  margin: 36px auto 0;
-  font-family: var(--serif);
+.about-copy p:not(.eyebrow) {
+  margin: 28px 0 0;
   color: var(--dark-muted);
-  font-size: 1.15rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -351,6 +440,20 @@ footer a {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+
+  .frame-solo,
+  .frame-small {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+
+  .frame-solo figcaption,
+  .frame-small figcaption {
+    flex: none;
+    max-width: 100%;
+    padding-top: 14px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -375,7 +478,8 @@ footer a {
 
   .hero-copy {
     bottom: 4.5%;
-    padding: 0 20px;
+    max-width: 78%;
+    padding: 0 0 0 6%;
   }
 
   .hero-copy .eyebrow {
@@ -405,6 +509,22 @@ footer a {
   .collections,
   .about {
     padding: 20vw 22px;
+  }
+
+  .about-inner {
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .about-photos {
+    flex: none;
+    width: 62%;
+    max-width: 260px;
+  }
+
+  .about-copy {
+    max-width: 100%;
+    padding-top: 0;
   }
 
   footer {
