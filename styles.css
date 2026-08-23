@@ -187,7 +187,7 @@ h1 {
 .intro {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 64px 24px 32px;
+  padding: 48px 24px 48px;
   text-align: left;
   transform: translateX(-86px);
 }
