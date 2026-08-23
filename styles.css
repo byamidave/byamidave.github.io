@@ -383,6 +383,7 @@ figcaption::after {
 .about-photo-primary {
   width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
 }
 
 .about-photo-secondary {
@@ -391,6 +392,7 @@ figcaption::after {
   bottom: -40px;
   width: 42%;
   aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 .about-photo-placeholder {
