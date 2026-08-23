@@ -388,9 +388,9 @@ figcaption::after {
 
 .about-photo-secondary {
   position: absolute;
-  right: -48px;
-  bottom: -40px;
-  width: 42%;
+  right: -60px;
+  bottom: -48px;
+  width: 38%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
 }
